@@ -1,6 +1,8 @@
-# AI-First JS Layer (AFJL)
-
-**AI as a native primitive for JavaScript.**
+<div align="center">
+  <img src="./logo.png" alt="AFJL Logo" width="180">
+  <h1>AI-First JS Layer (AFJL)</h1>
+  <p><strong>AI as a native primitive for JavaScript.</strong></p>
+</div>
 
 AFJL is a lightweight, type-safe runtime that brings AI capabilities directly into your JavaScript/TypeScript application logic. It enables decision-driven logic, self-adapting agents, and semantic security without heavy backend dependencies.
 
