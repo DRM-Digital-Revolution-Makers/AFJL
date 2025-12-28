@@ -13,9 +13,10 @@ describe('AI Singleton', () => {
     expect(memory.kind).toBe('session');
   });
 
-  test('should provide an agent instance', () => {
-    const agent = ai.agent({ model: 'test-model' });
+  test('should provide an agent instance without explicit model', () => {
+    const agent = ai.agent({ memory: 'session' });
     expect(agent).toBeDefined();
+    expect(agent.id).toMatch(/^agent-/);
   });
 
   test('should select best variant based on goal', async () => {

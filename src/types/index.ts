@@ -32,7 +32,7 @@ export interface AIMemory {
 }
 
 export interface AIAgentConfig {
-  model: AIModel | string;
+  model?: AIModel | string;
   memory?: AIMemory | string;
   tools?: unknown[];
 }

@@ -4,9 +4,10 @@ This meta-document consolidates the overview, architecture, API, and policies. S
 
 ## Page 1 — Overview & Primitives
 
-### Introduction and Goals
+### 1. Introduction and Goals
 - **AI as a native primitive** in JS/TS: declarative decisions, on-the-fly learning, context awareness.
 - **Goals:** Data-driven logic; client-first runtime (browser); compatibility with JS/TS; security and control; progressive enhancement.
+- **Model-Agnostic by Design:** AFJL does not require developers to select or manage AI models explicitly. Models are implementation details, chosen automatically by the runtime based on environment capabilities, policies, and goals. Explicit model configuration is optional and intended for advanced use cases only.
 
 ### Core Primitives
 - `ai.model(id, opts)` — Local (WebGPU/WASM) or external model adapter; manages inference/training.

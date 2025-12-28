@@ -32,8 +32,8 @@ pnpm add afjl
 ```typescript
 import { ai } from 'afjl';
 
-// 1. Define an agent
-const agent = ai.agent({ model: 'gpt-mini', memory: 'session' });
+// 1. Define an agent (No explicit model required)
+const agent = ai.agent({ memory: 'session' });
 
 // 2. Make a context-aware decision
 const decision = await ai.select({

@@ -21,6 +21,13 @@ describe('Agent', () => {
     expect(result).toHaveProperty('confidence');
   });
 
+  test('should work in implicit mode without model', async () => {
+    const autoAgent = new Agent({});
+    const result: any = await autoAgent.act({ input: 'test' });
+    expect(result.output).toContain('Auto-Pilot');
+    expect(result.reasoning).toContain('Implicit');
+  });
+
   test('should learn', async () => {
     await expect(agent.learn({ data: 'training-data' })).resolves.not.toThrow();
   });
